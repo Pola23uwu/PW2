@@ -1,0 +1,30 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var peso;
+			var estatura;
+			peso=prompt('Ingrese su peso:','');
+			estatura=prompt('Ingrese su estatura','');
+			var imc=parseFloat(peso)/(parseFloat(estatura) * parseFloat(estatura));
+			document.write('Tu IMC es: ');
+			document.write(imc);
+			document.write('<br>');
+            if (imc < 18.5)
+			{
+			
+				document.write('Su IMC es bajo');
+			}else if (imc >18.5 && imc <24.9)
+			{
+				document.write('Su IMC es normal');
+			}else if(imc> 25){
+				document.write('Tienes sobrepeso');
+			}
+			
+
+
+
+		</script>
+	</body>
+</html>
