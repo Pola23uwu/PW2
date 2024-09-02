@@ -1,0 +1,40 @@
+<html>
+	<head>
+        <link rel="StyleSheet" href="stylo.css" type="text/css">
+	</head>
+	<body>
+        <h1>Hola!! Checa tu IMC!!</h1>
+        <p>El índice de masa corporal (IMC) es un número que se calcula con base en el peso y la 
+            estatura de la persona. Para la mayoría de las personas, el IMC es un indicador confiable de la gordura y se usa 
+            para identificar las categorías de peso que pueden llevar a problemas de salud.</p>
+		<script type="text/javascript">
+			var peso;
+			var estatura;
+			peso=prompt('Ingrese su peso:','');
+			estatura=prompt('Ingrese su estatura','');
+			var imc=parseFloat(peso)/(parseFloat(estatura) * parseFloat(estatura));
+            document.write("<p class='simple-text'> Tu peso es: "+ peso + "</p>");
+			document.write('<br>');
+            document.write("<p class='simple-text'> Tu estatura es: "+ estatura + "</p>");
+			document.write('<br>');
+			document.write("<p class='simple-text'> Tu IMC es: "+ imc + "</p>");
+			document.write('<br>');
+            if (imc < 18.5)
+			{
+			
+				document.write("<p class='simple-text'>'Su IMC es bajo'</p>");
+			}else if (imc >18.5 && imc <24.9)
+			{
+				document.write("<p class='simple-text'>'Su IMC es normal'</p>");
+			}else if(imc> 25){
+				document.write("<p class='simple-text'>'Tienes sobrepeso'</p>");
+			}
+			
+
+
+
+		</script>
+        
+
+	</body>
+</html>
