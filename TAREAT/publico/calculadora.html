@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+   
+    <div class ="Calculadora">
+        
+        <input type="text" id = "pantalla" disabled >
+        <br>
+        <br>
+        <input type="button" value="1" onclick="agrePan('1')">
+        <input type="button" value="2" onclick="agrePan('2')">
+        <input type="button" value="3" onclick="agrePan('3')">
+        <input type="button" value="+" onclick="agrePan('+')">
+        <br>
+        <input type="button" value="4" onclick="agrePan('4')">
+        <input type="button" value="5" onclick="agrePan('5')">
+        <input type="button" value="6" onclick="agrePan('6')">
+        <input type="button" value="-" onclick="agrePan('-')">
+        <br>
+        <input type="button" value="7" onclick="agrePan('7')">
+        <input type="button" value="8" onclick="agrePan('8')">
+        <input type="button" value="9" onclick="agrePan('9')">
+        <input type="button" value="*" onclick="agrePan('*')">
+        <br>
+        <input type="button" value="C" onclick="LimPan()">
+        <input type="button" value="0" onclick="agrePan('0')">
+        <input type="button" value="=" onclick="calcula()">
+        <input type="button" value="/" onclick="agrePan('/')">
+    </div>
+    
+</body>
+<script src="calculador.js"></script>
+</html>

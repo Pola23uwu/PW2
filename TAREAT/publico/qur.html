@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR</title>
+    <link rel="stylesheet" href="estilosdos.css">
+</head>
+
+<body>
+
+    
+    <h1 style="text-align:center">Generar QR</h1>
+    
+
+    <div style="margin-top:50px">
+        <div>
+
+            <label for="input1">Nombre:</label>
+            <input type="text" id="input1" required maxlength="50" placeholder="Nombre">
+
+            <label for="input2">Correo Electronico:</label>
+            <input type="text" id="input2" type="email" required maxlength="50"placeholder="Ingresa el correo electronico">
+            <label for="input3">Escuela:</label>
+            <input type="text" id="input3">
+            <label for="input4">Agencia:</label>
+            <input type="text" id="input4">
+
+            <div>
+                <button onclick="geneQR()" class="btn btn-primary" style="background-color:rgb(248, 218, 218);color:rgb(0, 0, 0)">Generar</button>
+                <button onclick="location.href='qur.html'" class="btn btn-primary"
+                    style="background-color:rgb(255, 228, 228);color:rgb(0, 0, 0)">Nuevo QR</button>
+            </div>
+
+            <div style="text-align:center" id="qr-code">
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <script src="qr.js"></script>
+
+</body>
+
+</html>
