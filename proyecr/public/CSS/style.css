@@ -1,0 +1,166 @@
+/* Establece un fondo claro para toda la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Crea un contenedor centrado con un poco de sombra y bordes redondeados */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Encabezado de la tabla */
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Estilo de las filas de la tabla */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Botones */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para los formularios */
+form {
+    margin-bottom: 20px;
+}
+
+/* Estilo de los inputs */
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+/* Estilo del contenedor de la adición de usuario */
+.add-user-form {
+    margin-top: 20px;
+}
+
+/* Botón para agregar usuario */
+.add-user-button {
+    display: block;
+    width: 100%;
+    background-color: #008CBA;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.add-user-button:hover {
+    background-color: #007B8C;
+}
+
+/* Estilo de los mensajes de éxito o error */
+.alert {
+    padding: 10px;
+    color: white;
+    background-color: #f44336; /* rojo por defecto */
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: none; /* Se oculta por defecto */
+}
+
+/* Estilo para el contenido del formulario de edición */
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Input del formulario de edición */
+.edit-form input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Botones de modificar y borrar */
+.edit-form button {
+    width: 100%;
+    background-color: #FFC107;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.edit-form button:hover {
+    background-color: #ff9c00;
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 0 8px 8px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
